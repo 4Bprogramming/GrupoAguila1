@@ -63,7 +63,7 @@ function NavScrollExample() {
                 </>
               ) : (
                 <div className="navBarLinks">
-                  <NavLink to="/user">< Login /></NavLink>
+                  <NavLink to="#">< Login /></NavLink>
                 </div>
               )}
             </div>

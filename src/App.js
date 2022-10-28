@@ -11,7 +11,7 @@ import Register from "./Componets/Login/Register";
 import AddPeritos from "./Componets/InputsSelects/AddPeritos/AddPeritos";
 import TableTest from "./Componets/tableTest/TableTest";
 import { PrivateRoute } from "./PrivateRutes";
-import Login from "./Componets/Login/Login";
+/* import Login from "./Componets/Login/Login"; */
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <NavBarTest />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/user" element={<Users/>} >
        
         </Route>
