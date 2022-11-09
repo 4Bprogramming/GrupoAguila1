@@ -65,7 +65,7 @@ function Login() {
           navigate("/user");
         }
         else {
-          NotificationManager.error('Comuniquese con el administrador','Atención, no puede registrarse', 3000)
+          NotificationManager.error('Comuniquese con el administrador','Atención, no puede iniciar sesión', 4000)
         }
         // ...
       })
