@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 
 function Contacto() {
+  const navigate= useNavigate()
 
   function sendEmail(e) {
     e.preventDefault();
