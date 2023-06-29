@@ -16,7 +16,7 @@ import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
 const TableTestModalAdmin = (props) => {
-  // console.log('props', props)
+  console.log('props', props)
   let peritos = useSelector((state) => state.peritos);
   let namePeritos1 = useSelector((state) => state.peritosByName);
   let namePeritos = namePeritos1.map((e) => {
@@ -140,9 +140,10 @@ const TableTestModalAdmin = (props) => {
     e.preventDefault();
     
     try {
+      console.log('caseData[0].id',caseData[0].id)
       let edit = await updateCases(props.caseData[0].id, cases);
-  
-      //  console.log('caseData[0].id',caseData[0].id)
+      console.log('respuesta del submit=>', edit)
+       
       let peritoWhatsap = peritos.find(
         (el) => el.nombre === editFormInput.perito
       );
