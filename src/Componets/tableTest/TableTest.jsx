@@ -17,7 +17,7 @@ function TableResponsive({ cases, columns, detail, title, rol }) {
 
   //this function dispatches getPeritos(), getCases and PeritosByname
   function Actualizacion() {
-    console.log('entré en Actualizacion');
+   // console.log('entré en Actualizacion');
     dispatch(getPeritos())
     dispatch(getCasesAction())
     setTimeout(() => {

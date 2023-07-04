@@ -25,7 +25,7 @@ function DeleteCase(props) {
     e.preventDefault();
 
     caseData.bandera = "true";
-    console.log('ELIMINANDO CON BANDERA=>',caseData);
+  //  console.log('ELIMINANDO CON BANDERA=>',caseData);
     try {
       await updateCases(props.caseData[0].id, caseData);
      

@@ -5,31 +5,31 @@ const url=process.env.REACT_APP_DATABASE_URL
 
 // CREATE
 export const createPer = async(obj) => {
-  console.log('objeto de creacion=>', obj)
+ // console.log('objeto de creacion=>', obj)
     const data= await axios.post(`${url}/perito`, obj)
-    console.log('informacion que trae==>', data)
+ //   console.log('informacion que trae==>', data)
   //   // const colRef = collection(db, 'Peritos');
   //   // const data = await addDoc(colRef, obj);
     return data.message;
 }
 export const createCase = async(obj) => {
-  console.log('objeto de creacion=>', obj)
+ // console.log('objeto de creacion=>', obj)
   const data= await axios.post(`${url}/caso`, obj)
-  console.log('informacion que trae==>', data)
+ // console.log('informacion que trae==>', data)
   // // const colRef = collection(db, 'Peritos');
   // // const data = await addDoc(colRef, obj);
   return data.message;
 }
 // UPDATE
 export const updateCases = async (id, obj) => {
-  console.log('entre a modificar caso==>', id);
+//  console.log('entre a modificar caso==>', id);
   const data= await axios.put(`${url}/caso/${id}`, obj)
-  console.log('respuesta si se MODIFICA Caso=>', data);
+//  console.log('respuesta si se MODIFICA Caso=>', data);
 }
 export const updatePeritos = async (id, obj) => {
-  console.log('entre a modificar perito==>', id);
+//  console.log('entre a modificar perito==>', id);
   const data= await axios.put(`${url}/perito/${id}`, obj)
-  console.log('respuesta si se MODIFICA PERITO=>', data);
+ // console.log('respuesta si se MODIFICA PERITO=>', data);
    
 }
 
@@ -126,9 +126,9 @@ export const getItemById = async (id) => {
 
 // DELETE
 export const deletePerito = async (id) => {
-  console.log('entre a eliminar perito==>', id);
+ // console.log('entre a eliminar perito==>', id);
   const data= await axios.delete(`${url}/perito/${id}`)
-  console.log('respuesta si se elimino=>', data);
+ // console.log('respuesta si se elimino=>', data);
     // const colRef = collection(db, 'Peritos');
     // await deleteDoc(doc(colRef, id));
 }

@@ -11,7 +11,7 @@ function Card({ consult, clearConsult }) {
   if(consult[0].hasOwnProperty('perito')){
    infoPerito=  peritos.filter(e=>e.nombre===consult[0].perito)
   }
-  console.log(infoPerito)
+  // console.log(infoPerito)
 
   useEffect(() => {
     setLoader(true)

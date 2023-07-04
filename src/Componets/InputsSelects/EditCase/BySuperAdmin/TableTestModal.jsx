@@ -126,10 +126,10 @@ let body = [
     e.preventDefault();
     
     try {
-      let edit = await updateCases(props.caseData[0].id, cases);
+      let edit = await updateCases(props.caseData[0]?.id, cases);
       
   
-      //  console.log('caseData[0].id',caseData[0].id)
+      //  console.log('caseData[0].id',caseData[0]?.id)
       let peritoWhatsap = peritos.find(
         (el) => el.nombre === editFormInput.perito
       );

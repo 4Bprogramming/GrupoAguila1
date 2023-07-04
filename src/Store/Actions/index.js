@@ -16,12 +16,12 @@ import {
 } from "../utils/constantes";
 const url=process.env.REACT_APP_DATABASE_URL
 export function getPeritos() {
-  console.log('/////////entra a action getPeritos url==>/////////', process.env.REACT_APP_DATABASE_URL);
+ // console.log('/////////entra a action getPeritos url==>/////////', process.env.REACT_APP_DATABASE_URL);
   return async function (dispatch) {
-    console.log('/////////entra a DISPATCH action getPeritos/////////');
+ //   console.log('/////////entra a DISPATCH action getPeritos/////////');
     
   const data= await axios.get(`${url}/peritos`)
-  console.log('informacion que trae==>', data)
+ // console.log('informacion que trae==>', data)
   
     return dispatch({
       type: GET_PERITOS,
@@ -58,19 +58,21 @@ export function peritosByName() {
 
 export function postWhatsapp(body) {
   return async function (dispatch) {
-    // try {
-    //   var json = await axios.post(
-    //     "https://api.ultramsg.com/instance23751/messages/chat",
-    //     body
-    //   );
+    try {
+    //  console.log('mando wsp');
+      var json = await axios.post(
+        "https://api.ultramsg.com/instance23751/messages/chat",
+        body
+      );
+    //  console.log('respuesta json wsp==>', json);
  
-    //   return dispatch({
-    //     type: POST_WHATSAPP,
-    //     payload: json.data,
-    //   });
-    // } catch (error) {
-    //   console.log(error);
-    // }
+      return dispatch({
+        type: POST_WHATSAPP,
+        payload: json.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
 }
 

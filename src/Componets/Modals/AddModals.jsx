@@ -23,7 +23,7 @@ function AddModals({
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   // const handleSubmit=functionBottonAgree()
-  console.log('DETAILS==>',details);
+ // console.log('DETAILS==>',details);
   return (
     <>
       <Button variant="primary"  onClick={handleShow} className="addModalConfirmButton">

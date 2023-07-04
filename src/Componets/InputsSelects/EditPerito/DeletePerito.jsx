@@ -35,12 +35,12 @@ function DeletePerito(props) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log("idPerito", props.caseData[0].id);
+   // console.log("idPerito", props.caseData[0].id);
 
     try {
 
       let edit = await deletePerito(props.caseData[0].id);
-      console.log('respuesta edit ==>', edit);
+     // console.log('respuesta edit ==>', edit);
 
       props.close();
 

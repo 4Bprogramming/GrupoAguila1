@@ -70,7 +70,7 @@ function AddCases() {
   };
   //======= HANDLE SELECT ==================
   let handleSelect = (value, action) => {
-    console.log('valor que llega', value )
+   // console.log('valor que llega', value )
     if (action.name === "day") {
       setPost({
         ...post,
@@ -218,7 +218,7 @@ function AddCases() {
       }
     } else {
       let errorA = Object.values(error);
-      console.log('6===>', errorA)
+     // console.log('6===>', errorA)
       setShowE(true);
       setErr(errorA);
       // alert(`No se puede guardar el caso presenta el/los siguiente/s error/s:

@@ -42,7 +42,7 @@ const EditModalPerito = (props) => {
       e.preventDefault();
       if (e.target.value !== 'undefined') {
           setEditFormInput({ ...editFormInput, [e.target.name]: e.target.value });
-          console.log('******************el estadoo****',editFormInput)
+       //   console.log('******************el estadoo****',editFormInput)
         }
         else{
             let  nameL = e.target.name

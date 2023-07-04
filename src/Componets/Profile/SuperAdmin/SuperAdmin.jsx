@@ -14,7 +14,7 @@ import AllPeritos from "./TablesAlls/AllPeritos";
 
 function SuperAdmin() {
   const navigate = useNavigate();
-  console.log('admin general');
+ // console.log('admin general');
   // let dispatch= useDispatch()
   // useEffect(()=>{
   //   dispatch(getPeritos())
@@ -29,7 +29,7 @@ function SuperAdmin() {
   const [allPeritos, setAllPeritos] = useState(false)
 
   const handleClick = (value) => {
-    console.log('super admin handleClick -->', value) 
+  //  console.log('super admin handleClick -->', value) 
 
     if (value === 'AddCases') {
       navigate("/addCases")
